@@ -1,0 +1,26 @@
+[project]
+name = "fractional-nft"
+
+[[project.requirements]]
+contract_id = "SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard"
+
+[[project.requirements]]
+contract_id = "SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait"
+
+
+[contracts.semi-fungible-token-trait]
+path = "contracts/semi-fungible-token-trait.clar"
+depends_on = []
+
+[contracts.nft-share]
+path = "contracts/nft-share.clar"
+depends_on = []
+
+[contracts.nft-symbol]
+path = "contracts/nft-symbol.clar"
+depends_on = []
+
+[contracts.fractional-nft]
+path = "contracts/fractional-nft.clar"
+depends_on = ["semi-fungible-token-trait", "nft-share", "nft-symbol"]
+

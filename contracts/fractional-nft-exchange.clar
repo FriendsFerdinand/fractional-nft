@@ -1,6 +1,6 @@
 
 ;; testnet
-(use-trait 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.semi-fungible-token-trait.semi-fungible-token-trait)
+(use-trait sft-trait 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.semi-fungible-token-trait.semi-fungible-token-trait)
 (define-constant SFT_CONTRACT 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.fractional-nft)
 
 
